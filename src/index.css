@@ -4,15 +4,7 @@
   box-sizing: border-box;
 }
 
-#about {
-  height: 100vh;
-  width: auto;
-}
-#projects {
-  height: 100vh;
-  width: auto;
-}
-#contact {
+.content {
   height: 100vh;
   width: auto;
 }
