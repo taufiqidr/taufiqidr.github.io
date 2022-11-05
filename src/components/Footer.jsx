@@ -6,8 +6,9 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaReact,
-  FaPlus,
+  FaGithub,
 } from "react-icons/fa";
+import Icon from "./Icon";
 
 const Footer = () => {
   return (
@@ -20,7 +21,17 @@ const Footer = () => {
             </span>
           </div>
           <ul className="nav justify-content-center pb-3 mb-3 text-center">
-            <li className="nav-item me-5">
+            <li className="nav-item me-3">
+              <a
+                className="text-light"
+                href="https://github.com/taufiqidr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
+            </li>
+            <li className="nav-item me-3">
               <a
                 className="text-light"
                 href="https://www.linkedin.com/in/taufiqidr/"
@@ -40,7 +51,7 @@ const Footer = () => {
                 <FaTwitter />
               </a>
             </li>
-            <li className="nav-item ms-5 me-5">
+            <li className="nav-item ms-3 me-3">
               <a
                 className="text-light"
                 href="https://www.instagram.com/taufiqidr/"
@@ -60,7 +71,7 @@ const Footer = () => {
                 <FaFacebook />
               </a>
             </li>
-            <li className="nav-item ms-5">
+            <li className="nav-item ms-3">
               <a
                 className="text-light"
                 href="mailto:taufiqmck@gmail.com"
