@@ -5,18 +5,22 @@ import {
   FaBootstrap,
   FaLinkedin,
   FaEnvelope,
+  FaReact,
+  FaPlus,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div>
-      <footer className="p-xxl-5 static-bottom border-top bg-primary fs-4">
+      <footer className="p-xxl-5 static-bottom border-top bg-primary fs-5">
         <div className="container">
           <div className="nav justify-content-center mb-3 mt-3">
-            <span className="text-light">Made by taufiqidr &copy; 2022 </span>
+            <span className="text-light">
+              A portfolio website by taufiqidr &copy; 2022{" "}
+            </span>
           </div>
-          <ul class="nav justify-content-center pb-3 mb-3 text-center">
-            <li class="nav-item me-5">
+          <ul className="nav justify-content-center pb-3 mb-3 text-center">
+            <li className="nav-item me-5">
               <a
                 className="text-light"
                 href="https://www.linkedin.com/in/taufiqidr/"
@@ -26,7 +30,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
                 className="text-light"
                 href="https://twitter.com/taufiqidr"
@@ -36,7 +40,7 @@ const Footer = () => {
                 <FaTwitter />
               </a>
             </li>
-            <li class="nav-item ms-5 me-5">
+            <li className="nav-item ms-5 me-5">
               <a
                 className="text-light"
                 href="https://www.instagram.com/taufiqidr/"
@@ -46,7 +50,7 @@ const Footer = () => {
                 <FaInstagram />
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
                 className="text-light"
                 href="https://www.facebook.com/taufiqidr/"
@@ -56,7 +60,7 @@ const Footer = () => {
                 <FaFacebook />
               </a>
             </li>
-            <li class="nav-item ms-5">
+            <li className="nav-item ms-5">
               <a
                 className="text-light"
                 href="mailto:taufiqmck@gmail.com"
@@ -68,7 +72,7 @@ const Footer = () => {
             </li>
           </ul>
           <div className="row">
-            <p className="text-center">
+            <p className="text-center fs-6">
               <a
                 href="https://www.flaticon.com/free-icons/t"
                 className="text-light text-decoration-none"
@@ -83,10 +87,15 @@ const Footer = () => {
                 href="https://getbootstrap.com/"
                 className="text-light text-decoration-none"
               >
-                Made with Bootstrap 5{" "}
-                <h2>
+                Made with React + Bootstrap
+                <br />
+                <span className="fs-1">
+                  <FaReact />
+                </span>
+                <span className="fs-1 me-2 ms-2">+</span>
+                <span className="fs-1">
                   <FaBootstrap />
-                </h2>
+                </span>
               </a>
             </p>
           </div>
