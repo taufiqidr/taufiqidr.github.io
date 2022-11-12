@@ -10,9 +10,9 @@ import Welcome from "./Welcome";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <main className="bg-dark">
+      <main className="mx-auto max-w-7xl shadow-xl shadow-white">
         <Welcome />
         <About />
         <Skills />
@@ -21,7 +21,7 @@ const Layout = () => {
       </main>
       <Footer />
       <Up />
-    </div>
+    </>
   );
 };
 

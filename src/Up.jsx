@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 const Up = () => {
   const [visible, setVisible] = useState(false);
@@ -23,9 +24,9 @@ const Up = () => {
       style={{ display: visible ? "inline" : "none" }}
       id="myBtn"
       title="Go to top"
-      className="btn btn-primary"
+      className="bg-slate-700 hover:bg-blue-500"
     >
-      <i className="bi bi-arrow-up"></i>
+      <FaArrowUp />
     </button>
   );
 };

@@ -1,0 +1,5 @@
+# navbar
+
+bg-sky-700 dark:bg-slate-700
+    - link
+    - text-white dark:text-white
