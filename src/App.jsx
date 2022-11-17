@@ -1,27 +1,17 @@
 import React from "react";
-import About from "./About";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Up from "./Up";
-import Welcome from "./Welcome";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Components/Layout";
+import HomeLayout from "./Home/HomeLayout";
+import ProjectsLayout from "./Projects/ProjectsLayout";
 
 function App() {
   return (
-    <div className="mx-auto">
-      <Navbar />
-      <main className="shadow-xl shadow-white">
-        <Welcome />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-      <Up />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomeLayout />} />
+        <Route path="projects" element={<ProjectsLayout />} />
+      </Route>
+    </Routes>
   );
 }
 

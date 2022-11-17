@@ -91,10 +91,17 @@ const Footer = () => {
         </a>
       </p>
       <div className="flex flex-col ">
-        <a href="https://getbootstrap.com/" className="text-center text-base">
+        <a href="https://reactjs.org/" className="text-center text-md">
           Made with React + Taildwind CSS
           <div className="flex flex-row justify-center my-3 gap-x-3">
-            {<FaReact />} {<FaPlus />} {<FaWind />}
+            {<FaReact />} {<FaPlus />}{" "}
+            <img
+              src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg"
+              alt=""
+              height={"20"}
+              width={"20"}
+              className={"text-white"}
+            />
           </div>
         </a>
       </div>

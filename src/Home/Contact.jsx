@@ -12,7 +12,7 @@ const Contact = () => {
       id="contact"
       className="bg-black max-h-[calc(100vh-4rem)] h-[calc(100vh-4rem)] text-white scroll-mt-16 flex flex-col"
     >
-      <div className="">
+      <div className="mx-4">
         <h1 className="text-5xl font-bold text-center my-4">Contacts</h1>
         <p className="text-xl text-center my-4">
           I'm still open to job opportunities and collaboration. If you are
@@ -20,7 +20,7 @@ const Contact = () => {
           media account
         </p>
       </div>
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center h-screen mx-4">
         <ul className="grid grid-cols-3 gap-x-10 gap-y-10 sm:flex sm:flex-row sm:justify-evenly">
           <li className="text-7xl hover:text-blue-500">
             <a

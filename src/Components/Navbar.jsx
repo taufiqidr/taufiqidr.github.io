@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -28,24 +29,24 @@ function Navbar() {
         <nav className="items-center sm:flex hidden">
           <ul className="flex flex-row text-white items-center text-xl space-x-8">
             <li className="">
-              <a className="hover:text-blue-500" href="#about">
+              <a className="hover:text-blue-500" href="/#about">
                 About
               </a>
             </li>
             <li className="">
-              <a className="hover:text-blue-500" href="#skills">
+              <a className="hover:text-blue-500" href="/#skills">
                 Skills
               </a>
             </li>
             <li className="">
-              <a className="hover:text-blue-500" href="#projects">
-                Projects
+              <a className="hover:text-blue-500" href="/#contact">
+                Contact
               </a>
             </li>
             <li className="">
-              <a className="hover:text-blue-500" href="#contact">
-                Contact
-              </a>
+              <Link className="hover:text-blue-500" to="/projects">
+                Projects
+              </Link>
             </li>
           </ul>
         </nav>
@@ -63,29 +64,29 @@ function Navbar() {
             aria-label="mobile"
           >
             <a
-              href="#about"
+              href="/#about"
               className="w-full py-6 text-center hover:opacity-90"
             >
               About
             </a>
             <a
-              href="#skills"
+              href="/#skills"
               className="w-full py-6 text-center hover:opacity-90"
             >
               Skills
             </a>
             <a
-              href="#projects"
-              className="w-full py-6 text-center hover:opacity-90"
-            >
-              Projects
-            </a>
-            <a
-              href="#contact"
+              href="/#contact"
               className="w-full py-6 text-center hover:opacity-90"
             >
               Contact
             </a>
+            <Link
+              to="/projects"
+              className="w-full py-6 text-center hover:opacity-90"
+            >
+              Projects
+            </Link>
           </nav>
         </section>
       </div>
