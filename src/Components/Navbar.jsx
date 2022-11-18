@@ -57,13 +57,13 @@ function Navbar() {
             aria-label="mobile"
           >
             <Link
-              href="/about"
+              to="/about"
               className="w-full py-6 text-center hover:opacity-90"
             >
               About
             </Link>
             <Link
-              href="/blog"
+              to="/blog"
               className="w-full py-6 text-center hover:opacity-90"
             >
               Blog
