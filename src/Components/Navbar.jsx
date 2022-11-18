@@ -5,16 +5,14 @@ function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
     //
-    <header className="sticky top-0 z-10 bg-slate-700 text-white">
+    <header className="sticky top-0 z-10 bg-gray-900 text-white">
       <div className="mx-auto flex items-center justify-between p-4 max-w-7xl">
-        <a
+        <Link
           className="text-white text-3xl flex items-center hover:text-blue-500"
-          href="https://www.linkedin.com/in/taufiqidr/"
-          target="_blank"
-          rel="noopener noreferrer"
+          to="/"
         >
           @taufiqidr
-        </a>
+        </Link>
         <button
           id="hamburger-button"
           className={`relative h-8 w-8 cursor-pointer text-3xl md:hidden ${
@@ -29,19 +27,14 @@ function Navbar() {
         <nav className="items-center sm:flex hidden">
           <ul className="flex flex-row text-white items-center text-xl space-x-8">
             <li className="">
-              <a className="hover:text-blue-500" href="/#about">
+              <Link className="hover:text-blue-500" to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="">
-              <a className="hover:text-blue-500" href="/#skills">
-                Skills
-              </a>
-            </li>
-            <li className="">
-              <a className="hover:text-blue-500" href="/#contact">
-                Contact
-              </a>
+              <Link className="hover:text-blue-500" to="/blog">
+                Blog
+              </Link>
             </li>
             <li className="">
               <Link className="hover:text-blue-500" to="/projects">
@@ -63,24 +56,18 @@ function Navbar() {
             className="flex min-h-screen flex-col items-center py-8 backdrop-blur-lg"
             aria-label="mobile"
           >
-            <a
-              href="/#about"
+            <Link
+              href="/about"
               className="w-full py-6 text-center hover:opacity-90"
             >
               About
-            </a>
-            <a
-              href="/#skills"
+            </Link>
+            <Link
+              href="/blog"
               className="w-full py-6 text-center hover:opacity-90"
             >
-              Skills
-            </a>
-            <a
-              href="/#contact"
-              className="w-full py-6 text-center hover:opacity-90"
-            >
-              Contact
-            </a>
+              Blog
+            </Link>
             <Link
               to="/projects"
               className="w-full py-6 text-center hover:opacity-90"

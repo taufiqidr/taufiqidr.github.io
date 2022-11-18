@@ -1,5 +1,3 @@
-import { FaLink, FaWrench } from "react-icons/fa";
-
 const Projects = () => {
   return (
     <section
